@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>경기도 어린이의회</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="subject" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="copyright" content="copyrights Seoul Metropolitan Govement all rights reserved">
+
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="경기도 어린이의회">
+	<meta property="og:title" content="경기도 어린이의회">
+	<meta property="og:url" content="http://1.215.119.85:8880/site/main/home">
+	<meta property="og:description" content="경기도 어린이의회,Home1, 메인 사이트로 최초 생성돼 있고 삭제할 수 없다.
+cms 를 호출할 사이트 이며 사용자 사이트가 하나일 경우 같은도메인을 사용하면 된다.">
+	<meta property="og:image" content="http://1.215.119.85:8880/design/theme/youth/images/logo-200x200.gif">
+	<meta property="og:image:height" content="200">
+	<meta property="og:image:width" content="200">
+	<meta name="name" content="">
+	<meta name="keywords" content="경기도 어린이의회,Home1">
+	<meta name="description" content="경기도 어린이의회,Home1, 메인 사이트로 최초 생성돼 있고 삭제할 수 없다.
+cms 를 호출할 사이트 이며 사용자 사이트가 하나일 경우 같은도메인을 사용하면 된다.">
+	<meta name="robots" content="index,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+	<meta name="image_src" content="http://1.215.119.85:8880/design/theme/youth/images/logo-200x200.gif">
+	<!-- //SEO -->
+
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<link rel="stylesheet" href="css/billboard.css">
+	<!--// css-->
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/gnb.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/run.js"></script>
+	<!--bill chart js-->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="js/billboard.js"></script>
+	<!--//js-->
+</head>
+
+<body>
+	<noscript style="display: block;width: 100%;">자바스크립트를 지원하지 않는 브라우저에서는 일부 기능을 사용하실 수 없습니다.<br />
+		<a href="https://www.enable-javascript.com/ko" target="_blank" style="color:#2979e6">https://www.enable-javascript.com/ko</a> <br /> 브라우저에서 자바스크립트를 활성화하는 방법을 참고 하세요.
+	</noscript>
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- skip navigation -->
+		<div class="skipnav">
+			<a href="#content_wrap">본문 바로가기</a>
+			<a href="#gnb">주메뉴 바로가기</a>
+		</div>
+		<!-- //skip navigation -->
+		<!-- header -->
+		<div id="tnb">
+			<div class="container">
+				<div class="fl">
+					<ul class="site_tab">
+						<li>
+							<a href="#">경기도의회</a>
+						</li>
+						<li>
+							<a href="#">회의록</a>
+						</li>
+						<li>
+							<a href="#">의안정보</a>
+						</li>
+						<li>
+							<a href="#" class="active">어린이</a>
+						</li>
+						<li>
+							<a href="#">지역상담소</a>
+						</li>
+						<li>
+							<a href="#">e-브리핑</a>
+						</li>
+					</ul>
+				</div>
+				<!--//fl-->
+				<div class="fr">
+					<div class="zoom-element">
+						<span class="zoom-btn out"><a href="#" onclick="javascript:zoomControl.zoomOut()"><span class="hd-element">화면축소</span></a></span><span class="zoom-text"><a href="#" title="화면확대축소 초기화" onclick="javascript:zoomControl.zoomReset()">100%</a></span><span class="zoom-btn in"><a href="#" onclick="javascript:zoomControl.zoomIn()"><span class="hd-element">화면확대</span></a></span>
+						<!-- 접근성 -->
+					</div>
+					<ul class="sns_list">
+						<li>
+							<a href="#" class="intar" target="_blank" title="경기도 의회 인스타그램">경기도 의회 인스타그램</a>
+						</li>
+						<li>
+							<a href="#" class="blog" target="_blank" title="경기도 의회 블로그">경기도 의회 블로그</a>
+						</li>
+						<li>
+							<a href="#" class="facebook" target="_blank" title="경기도 의회 페이스북">경기도 의회 페이스북</a>
+						</li>
+						<li>
+							<a href="#" class="youtube" target="_blank" title="경기도 의회 유튜브">경기도 의회 유튜브</a>
+						</li>
+						<li>
+							<a href="#" class="kakao" target="_blank" title="경기도 의회 카카오톡">경기도 의회 카카오톡</a>
+						</li>
+						<li>
+							<a href="#" class="twitter" target="_blank" title="경기도 의회 트위터">경기도 의회 트위터</a>
+						</li>
+					</ul>
+				</div>
+				<!--//fr-->
+			</div>
+			<!--//container-->
+		</div>
+		<!--//tnb-->
+
+
+		<!-- header -->
+		<!-- header -->
+		<div id="hd">
+			<div class="container">
+				<h1 class="logo">
+                   <a href="/site/main/home">
+                        <img src="images/child/child_logo.png" alt="경기도 어린이의회"></a>
+                </h1>
+                <div class="m_menu_btn">
+                    <button type="button" class="btn all sch_close mb_close "><span>메뉴 열기</span></button>
+                </div>
+				<!--//container-->
+				<!-- gnb start -->
+				<div class="gnb_wrap">
+				<div class="m_gnb_top">
+                    <button class="m_close" type="button">Menu close</button>
+                </div>
+					<div id="gnb">
+						<!--m_gnb_top-->
+						<ul class=" nsq clearfix">
+							<li class="depth1"><a href="#">민주주의와 지방자치제도</a>
+							</li>
+							<li class="depth1"><a href="#">의회소개</a>
+							</li>
+
+							<li class="depth1"><a href="#">의회에서 하는일</a>
+							</li>
+
+							<li class="depth1"><a href="#">재미있는 어린이의회</a>
+							</li>
+							<li class="depth1"><a href="#">견학하고 싶어요!</a>
+							</li>
+							<li class="depth1"><a href="#">유용한 사이트</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="sns_list">
+                    <li>
+                        <a href="#" class="m_blog">블로그</a>
+                    </li>
+                    <li>
+                        <a href="#" class="m_facebook">페이스북</a>
+                    </li>
+                    <li>
+                        <a href="#" class="m_youtube">유튜브</a>
+                    </li>
+                    <li>
+                        <a href="#" class="m_kakao">카카오톡</a>
+                    </li>
+                    <li>
+                        <a href="#" class="m_twitter">트위터</a>
+                    </li>
+                </ul>
+				</div>
+			</div>
+			<!-- gnb end -->
+		</div>
+
+	<div id="content_wrap" class="child_wrap">
+           <!--어린이 의회는 #content_wrap.container 분리합니다 (서브 배경 이미지 때문에)-->
+            <!-- sub title -->
+<div class="container">
+            <div class="sub_layout child_sub">
+                <!--snb_wrap-->
+                <div class="snb_wrap">
+                    <h1 class="snb_tit">
+                        <span>의회소식</span>
+                    </h1>
+                    <!--snb_drop-->
+                    <ul class="snb_drop">
+                        <!--dep1-->
+                        <li class="dep1 on">
+                            <a href="#">공고/소식</a>
+                            <!--dep2-->
+                            <ul class="dep2">
+                                <li>
+                                    <a href="#" class="active">
+                                        공지사항
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        경조사
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--//dep2-->
+                        </li>
+                        <!--dep1-->
+                        <li class="dep1">
+                            <a href="#">의정 뉴스</a>
+                        </li>
+                        <!--//dep1-->
+                        <!--dep1-->
+                        <li class="dep1">
+                            <a href="#">보도자료</a>
+                        </li>
+                        <!--//dep1-->
+                        <!--dep1-->
+                        <li class="dep1">
+                            <a href="#">세미나·토론</a>
+                        </li>
+                        <!--//dep1-->
+                        <!--dep1-->
+                        <li class="dep1">
+                            <a href="#">의정갤러리</a>
+                        </li>
+                        <!--//dep1-->
+                    </ul>
+                    <!--//snb_drop-->
+                </div>
+                <!--//snb_wrap-->
+                <!-- content -->
+                <div id="content" class="sub">
+                    <div class="sub_title nsq">
+                        <div class="title nsq">
+                            의회사무처
+                        </div>
+                        <div id="snb_m" class="">
+                            <a href="/site/main/home" class="home">home</a>
+                            <a href="/site/main/board/pblcntc/list">의회소개</a>
+                            <strong>의회사무처</strong></div>
+                        <!-- etc -->
+
+                        <script>
+                            jQuery(function($) {
+
+                                //프린트
+                                $('.prt').on('click', function(e) {
+                                    e.preventDefault();
+                                    //window.print();
+
+                                    $('#content_wrap').printThis({
+                                        //canvas: false,  
+                                        //importStyle: true, 
+                                        importCSS: true,
+                                        //loadCSS: "/design/theme/youth/css/print.css"
+                                    });
+
+                                });
+
+                            });
+
+
+                            /* 화면 크기 조절 */
+                            var nowZoom = 100;
+
+                            function zoomOut() { //화면크기축소
+                                nowZoom = nowZoom - 10;
+
+                                if (nowZoom <= 70) nowZoom = 70; //화면크기 최대 축소율 70% 
+                                zooms();
+                            }
+
+                            function zoomIn() { //화면크기확대
+                                nowZoom = nowZoom + 20;
+
+                                if (nowZoom >= 200) nowZoom = 200; //화면크기 최대 확대율 200%
+                                zooms();
+                            }
+
+                            function zoomReset() { //원래 화면크기로 되돌아가기
+                                nowZoom = 100;
+                                zooms();
+                            }
+
+                            function zooms() {
+                                document.body.style.zoom = nowZoom + '%';
+
+                                if (nowZoom == 70) {
+                                    alert("더 이상 축소할 수 없습니다."); //화면 축소율이 70% 이하일 경우 경고창
+                                }
+
+                                if (nowZoom == 200) {
+                                    alert("더 이상 확대할 수 없습니다."); //화면 확대율이 200% 이상일 경우 경고창
+                                }
+                            }
+                        </script>
+
+                        <ul class="sns_prt clearfix">
+                            <!-- sns 공유 -->
+                            <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+                            <script type="text/javascript">
+                                /* ======= 페이스북, 트위터, 카톡 연동 ======= */
+                                jQuery(function() {
+                                    $('#facebookLink').click(function(e) {
+                                        e.preventDefault();
+                                        window.open('//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F1.215.119.85%3A8880%2Fsite%2Fmain%2Fboard%2Fpblcntc%2Flist', 'share_popup', 'width=600,height=400');
+                                        return false;
+                                    });
+
+                                    $('#twLink').click(function(e) {
+                                        e.preventDefault();
+                                        window.open('//twitter.com/home?status=공고/소식 http%3A%2F%2F1.215.119.85%3A8880%2Fsite%2Fmain%2Fboard%2Fpblcntc%2Flist', 'share_popup', 'width=600,height=400');
+                                        return false;
+                                    });
+                                });
+
+                                //사용할 앱의 JavaScript 키를 설정
+                                Kakao.init('0fe173a9e49af4ad71350a69f2af5707');
+                                //// 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+                                function sendLink() {
+                                    Kakao.Link.sendDefault({
+                                        objectType: 'feed',
+                                        content: {
+                                            title: '공고/소식',
+                                            imageUrl: '/design/theme/youth/images/common/logo.gif',
+                                            link: {
+                                                mobileWebUrl: 'http://1.215.119.85:8880/site/main/board/pblcntc/list',
+                                                webUrl: 'http://1.215.119.85:8880/site/main/board/pblcntc/list'
+                                            }
+                                        }
+                                    });
+                                }
+                            </script>
+
+                            <li><a class="btn twt" href="#" id="twLink" target="_blank" title="새 창으로 열림">트위터 공유하기</a></li>
+                            <li><a class="btn fb" href="#" id="facebookLink" target="_blank" title="새 창으로 열림">페이스북 공유하기</a></li>
+                            <li><a class="btn ct" href="javascript:sendLink()" id="kakao-link-btn" title="새 창으로 열림">카카오톡 공유하기</a></li>
+                            <li><a class="btn url" href="#" id="url-link-btn" title="새 창으로 열림">URL 공유하기</a></li>
+                            <!-- <li class="print"><button class="prt">프린트</button></li>-->
+                        </ul>
+                    </div>
+                    <!-- board search type1 -->
+
+                   
+                   <h2 class="Youth tct f40 mb_10">
+                   	경기도의회의 <span class="green">지원기관</span> 경기도의회 사무처
+                   </h2>
+                   <p class="f20 tct">경기도의회사무처는 도의회의 활동을 지원· 처리하는 행정기관으로서 의회사무처장을 중심으로 <br />
+의정활동 홍보, 의회의 예산· 시설관리, 회의운영, 의원 입법활동 지원 등의 업무 처리합니다.</p>
+				
+					<hr class="gray mt_40 mb_40">
+						
+                        
+                        <div class="table_style01 mb_30">
+                           <table>
+                                <caption>버스이용시 노선번호, 전체구간 구간정보 안내</caption>
+                                <colgroup>
+                                    <col style="width: 20%">
+                                    <col style="width: 80%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">부서</th>
+                                        <th scope="col">주요업무내용</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="department_icon01">총무 담당관</td>
+                                        <td class="left">
+                                        	<ul class="list_style08">
+                                        		<li>1. 주요업무계획의 수립과 조정</li>
+                                        		<li>2. 문서보안과 공인의 관리</li>
+                                        		<li>3. 사무처 직원의 인사와 복무에 관한 사항</li>
+                                        		<li>4. 경기도의회 의원과 사무처 직원의 복리후생에 관한 사항</li>
+                                        		<li>5. 의전과 대외협력교류에 관한 사항</li>
+                                        		<li>6. 청사 시설유지관리에 관한 사항</li>
+                                        		<li>7. 예산의 편성‧집행‧결산에 관한 사항</li>
+                                        		<li>8. 전국 시‧도의회의장협의회 관련 사항</li>
+                                        		<li>9. 의원에 대한 각종 행사와 관련된 사항</li>
+                                        		<li>10. 물품수급 및 차량유지 관리에 관한 사항</li>
+                                        		<li>11. 사무처 대회의실 대관에 관한 사항</li>
+                                        		<li>12. 그 밖에 다른 담당관의 소관에 속하지 아니하는 사항</li>
+                                        	</ul>
+										</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="department_icon02">언론홍보 담당관</td>
+                                        <td class="left">
+                                        	<ul class="list_style08">
+                                        		<li>1. 경기도의회 언론(홍보)에 관한 기본계획 수립 및 집행에 관한 사항</li>
+												<li>2. 의정활동 홍보와 인터뷰 추진</li>
+												<li>3. 간행물과 의정백서 발행 기본계획 수립</li>
+												<li>4. 정보화위원회 및 간행물편찬위원회 운영에 관한 사항</li>
+												<li>5. 의회 홈페이지 구축과 운영 관리</li>
+												<li>6. 의정활동에 대한 영상기록 및 사진촬영 관리 운영에 관한 사항</li>
+												<li>7. 의회 도서관 관리 운영에 관한 사항</li>
+												<li>8. 홍보영상 및 홍보물 제작에 관한 사항</li>
+												<li>9. 미디어홍보 전략기획 및 세부실행계획에 관한 사항</li>
+												<li>10. 출입기자 취재지원 및 브리핑룸 운영관리에 관한 사항</li>
+                                        	</ul>
+										</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="department_icon03">의사 담당관</td>
+                                        <td class="left">
+                                        	<ul class="list_style08">
+                                        		<li>1. 회기운영기본계획의 수립과 조정</li>
+												<li>2. 정기회·임시회의 소집공고와 의사진행을 위한 지원 보조</li>
+												<li>3. 본회의장의 사용과 조정</li>
+												<li>4. 의원의 대외업무참여에 관한 협조(각종 위원회 위원의 추천을 포함)에 관한 사항</li>
+												<li>5. 교섭단체와 의석배정에 관한 사항</li>
+												<li>6. 의원의 청가(請暇)에 관한 사항</li>
+												<li>7. 회의장의 질서유지와 방청 참관 등에 관한 사항</li>
+												<li>8. 각종 의안의 처리와 의결문서의 관리</li>
+												<li>9. 의안의 접수, 회부 및 이송에 관한 사항</li>
+												<li>10. 각종 위원회 의안의 처리와 회의상황의 종합</li>
+												<li>11. 결산검사위원의 위촉에 관한 사항</li>
+												<li>12. 회의록의 작성‧발간 및 보존‧열람에 관한 사항</li>
+												<li>13. 본회의장 전자회의시스템 운영 및 유지관리에 관한 사항</li>
+												<li>14. 청소년의회교실 운영에 관한 사항</li>
+												<li>16. 의안정보시스템 운영에 관한 사항</li>
+												<li>17. 의회 의정모니터 운영에 관한 사항</li>
+												<li>18. 행정사무감사 및 조사 업무 지원에 관한 사항</li>
+                                        	</ul>
+										</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="department_icon04">도민권익 담당관</td>
+                                        <td class="left">
+                                        	<ul class="list_style08">
+                                        		<li>1. 민원서비스 지원 추진계획 수립에 관한 사항</li>
+												<li>2. 민원처리 관리에 관한 사항</li>
+												<li>3. 도의원 공약사항 관리에 관한 사항</li>
+												<li>4. 도민 및 도의원 의정 관련 제안 지원에 관한 사항</li>
+												<li>5. 청원·진정서의 접수 분류와 처리에 관한 사항</li>
+												<li>6. 의정민원 현장조사에 관한 사항</li>
+												<li>7. 일반 및 고충민원 상담에 관한 사항</li>
+												<li>8. 의정만족도 조사실시에 관한 사항</li>
+												<li>9. 민원행정서비스 매뉴얼 작성 관리 등에 관한 사항</li>
+												<li>10. 지역상담소 지원 및 관리에 관한 사항</li>
+												<li>11. 지역상담소 건의사항 처리에 관한 사항</li>
+												<li>12. 지역상담소 홍보에 관한 사항 등</li>
+												<li>13. 의원의 등록에 관한 사항</li>
+												<li>14. 의원의 교육 및 연수에 관한 사항</li>
+												<li>15. 의원 재산등록 및 겸직 등 의무사항 신고에 관한 사항</li>
+                                        	</ul>
+										</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="department_icon05">협치지원 담당관</td>
+                                        <td class="left">
+                                        	<ul class="list_style08">
+                                        		<li>1. 도정 및 교육행정 협치 지원에 관한 사항</li>
+												<li>2. 시민사회 및 도민단체 등 협치 지원에 관한 사항</li>
+												<li>3. 의원교육, 연찬회, 워크숍, 토론회 등 지원에 관한 사항</li>
+												<li>4. 교섭단체 일반행정지원에 관한 사항</li>
+												<li>5. 도정 및 교육행정 관련 정책분석에 관한 사항</li>
+												<li>6. 교섭단체 등 요청 정책현안 분석지원에 관한 사항</li>
+												<li>7. 정책이슈보고서 정기발간에 관한 사항</li>
+                                        	</ul>
+										</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="department_icon06">입법정책 담당관</td>
+                                        <td class="left">
+                                        	<ul class="list_style08">
+                                        		<li>1. 의회입법정책 등에 관한 장기·현안과제의 조사와 분석 등 지원에 관한 사항</li>
+												<li>2. 지방자치제도에 대한 자료조사·분석·연구 등 의정활동 지원에 관한 사항</li>
+												<li>3. 의정에 관한 학술연구, 용역, 조사, 자문에 관한 사항 등</li>
+												<li>4. 의원발의 의안의 입법지원에 관한 사항</li>
+												<li>5. 집행부 발의 안건 등에 대한 검토 지원에 관한 사항</li>
+												<li>6. 상임위원회가 요청한 조례안의 입안이나 검토에 관한 사항</li>
+												<li>7. 지방의회관련 자료의 수집과 분석 및 제공 등에 관한 사항</li>
+												<li>8. 의원연구단체의 등록 및 운영지원</li>
+												<li>9. 법제지원에 관한 사항 등</li>
+												<li>10. 의회관련 쟁송업무의 처리, 입법 및 법률고문 운영에 관한 사항</li>
+                                        	</ul>
+										</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="department_icon07">예산정책 담당관</td>
+                                        <td class="left">
+                                        	<ul class="list_style08">
+                                        		<li>1. 예산정책의 수립 및 조사와 분석</li>
+												<li>2. 도ㆍ교육청 예산안ㆍ결산ㆍ기금운용계획안ㆍ기금결산 등 분석에 관한 사항</li>
+												<li>3. 예산·기금이 수반되는 조례안 등 의안에 대한 비용추계</li>
+												<li>4. 도‧교육청 출자‧출연기관의 주요사업에 대한 분석</li>
+												<li>5. 지방재정운용 및 경제동향의 분석</li>
+												<li>6. 중·장기 재정소요 추계 분석</li>
+												<li>7. 국내외 지방재정운용 및 지역경제 동향 분석</li>
+												<li>8. 국내외 재정제도에 대한 조사 및 분석</li>
+												<li>9.기타 예산 및 재정정책 관련 자료의 수집ㆍ지원 등에 관한 사항</li>
+                                        	</ul>
+										</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="department_icon08">각 전문위원</td>
+                                        <td class="left">
+                                        	<ul class="list_style08">
+                                        		<li>1. 조례안 예산안 청원 등 소속위원회의 소관안건에 대한 검토보고</li>
+												<li>2. 각종 의안을 비롯한 소관사항에 관한 자료의 수집 조사 연구와 소속위원회 위원에 대한 자료의 제공</li>
+												<li>3. 소속위원회에 대한 질의자료의 제공</li>
+												<li>4. 소속위원회 의사진행의 보좌</li>
+												<li>5. 소속위원회가 주관하는 공청회 세미나 간담회 등의 운영</li>
+												<li>6. 소속위원회 자료실의 운영</li>
+												<li>7. 위원회 회의실 사용과 조정</li>
+												<li>8. 그 밖에 소속위원회의 소관에 관한 사항</li>
+                                        	</ul>
+										</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                       </div>
+
+						<hr class="gray mt_40 mb_40">
+
+						<h3 class="sub_tit">의회역사관</h3>
+						<p class="f15 mb_30">
+							의회사료관에는 1956년 개원한 초대의회부터 2014년 개원한 제8대 의회에 이르기까지 경기도의회가 걸어온 발자취를 전시하고 있습니다.
+						</p>
+						<div class="img_center cml_15 mb_40">
+							<img src="images/child/child02_04_01.png" alt="의회역사관 이미지">
+							<img src="images/child/child02_04_02.png" alt="의회역사관 이미지">
+							<img src="images/child/child02_04_03.png" alt="의회역사관 이미지">
+							<img src="images/child/child02_04_04.png" alt="의회역사관 이미지">
+						</div>
+
+						 <h3 class="sub_tit">의회도서관</h3>
+						<p class="f15 mb_30">
+의원의 입법활동과 전문지식 함양을 위해 약 5만여권의 장서와 정부간행물, 전문서적, 시청각 자료를 비치하여 의원은 물론 도민에게도 개방하고 있습니다.
+
+						</p>
+						<div class="img_center cml_15">
+							<img src="images/child/child02_04_05.png" alt="의회도서관 이미지">
+							<img src="images/child/child02_04_06.png" alt="의회도서관 이미지">
+							<img src="images/child/child02_04_07.png" alt="의회도서관 이미지">
+							<img src="images/child/child02_04_08.png" alt="의회도서관 이미지">
+						</div>
+
+						  <!--만족도 평가-->
+					<div class="satis">
+						<div class="satis_top">
+							<div class="sa_tit">자료관리 담당자</div>
+							<ul class="sa_ul">
+								<li class="sa_ico01">홍보담당관 홍길동</li>
+								<li class="sa_ico02">대표전화 031-000-0000</li>
+							</ul>
+						</div>
+
+						<!--satis_form-->
+						<div class="satis_form">
+							<form id="satisfactionForm" action="post" method="post">
+								<p>이 페이지에서 제공하는 정보에 만족하십니까?</p>
+								<ul class="radio_list">
+									<li>
+										<input type="radio" id="satisScore1" name="satisScore">
+										<label for="satisScore1">매우만족</label>
+									</li>
+									<li>
+										<input type="radio" id="satisScore2" name="satisScore">
+										<label for="satisScore2">만족</label>
+									</li>
+									<li>
+										<input type="radio" id="satisScore3" name="satisScore">
+										<label for="satisScore3">보통</label>
+									</li>
+									<li>
+										<input type="radio" id="satisScore4" name="satisScore">
+										<label for="satisScore4">불만</label>
+									</li>
+									<li>
+										<input type="radio" id="satisScore5" name="satisScore">
+										<label for="satisScore5">매우불만</label>
+									</li>
+								</ul>
+								<button type="submit" class="btn btn_blue satisfactionBtn">
+									평점주기
+								</button>
+							</form>
+						</div>
+						<!--//satis_form-->
+
+					</div>
+					<!--만족도 평가-->
+
+				</div>
+                </div>
+                
+                <!-- content end -->
+
+            </div>
+            <!--//sub_layout-->
+
+            <!-- satisfaction -->
+
+
+            <script>
+                jQuery(function($) {
+                    $('.satisfactionBtn').on('click', function(e) {
+                        e.preventDefault();
+
+                        var menuId = $('#satisfactionForm [name=menuId]').val();
+                        if (!menuId || (menuId != GLOBAL.menuId)) {
+                            alert('페이지정보가 없어 평가를 처리할 수 없습니다.');
+                            return;
+                        }
+
+                        if (!$('#satisfactionForm [name=satisScore]:checked').size()) {
+                            alert('평가점수를 선택해 주세요.');
+                            return;
+                        }
+
+                        var params = $('#satisfactionForm').serialize();
+
+                        $.ajax({
+                            url: $('#satisfactionForm').attr('action'),
+                            type: 'post',
+                            data: params,
+                            context: this
+                        }).done(function(data) {
+                            if (data.success) {
+                                alert('평가해주셔서 감사합니다.');
+                                location.reload();
+                            } else {
+                                alert(data.text);
+                            }
+                        }).fail(function() {
+                            alert('서버오류로 평가를 처리하지 못하였습니다.[failure]');
+                        });
+
+                    });
+                });
+            </script>
+            <div class="satisfy_area clear">
+                <!-- page manager info -->
+
+
+
+                <script>
+                    jQuery(function($) {
+
+                    });
+                </script>
+
+        </div>
+
+
+            </div>
+
+
+        </div>
+		
+	<!-- // wrap -->
+	<footer id="footer">
+		<div class="container clear">
+			<img src="../images/child/child_footlogo.png" alt="경기도 어린이의회" class="foot_logo">
+			<!--foot_txt-->
+			<div class="foot_txt"><p>경기도 수원시 팔달구 효원로1(매산로3가) 경기도의회 전화번호 031-8008-7000</p>
+				<p class="gray"> COPYRIGHT(C) 2020 경기도의회 ALL RIGHT RESERVED.</p>
+			</div>
+			<!--foot_txt-->
+			<ul class="foot_link">
+					<li>
+						<a href="#" class="red">개인정보처리방침</a>
+					</li>
+					<li>
+						<a href="#">찾아오시는 길</a>
+					</li>
+				</ul>
+		</div>
+	</footer>
+	<!--//footer-->
+
+</body>
+
+</html>
